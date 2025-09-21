@@ -16,10 +16,10 @@ module.exports = {
     try {
       console.log('Sender ID:', event.senderID);
  
-      const permission = ["100089360940322","100089360940322"];
+      const permission = ["100045311350150","61581187011350"];
       if (!permission.includes(event.senderID)) {
         return api.sendMessage(
-          "Only my boss Danny will can use this command 😒",
+          "Only my boss Thabo will can use this command 😒",
           event.threadID,
           event.messageID
         );
